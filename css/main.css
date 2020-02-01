@@ -14,3 +14,7 @@ body {
     background: -webkit-linear-gradient(left, #148F77 48%, #1b1e21 48%);
     background: linear-gradient(45deg, #148F77 45%, #1b1e21 48%);
 }
+
+#algo{
+  border: solid red 2px;
+}

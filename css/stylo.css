@@ -1,0 +1,155 @@
+#maintable {
+    border-collapse:collapse;
+    background-color: rgba(255,255,255,0.8);
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow:scroll;
+}
+#maintable tr:hover {
+    background-color: #ffffff;
+
+}
+#maintable tr.selected td {
+    background: none repeat scroll 0 0 #FFCF8B;
+    color: #000000;
+
+}/* The Modal (background) */
+html{
+    height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nav{
+  background-color: transparent;
+}
+.fondo1{
+  background-image: url("https://www.xtrafondos.com/wallpapers/bosque-en-la-niebla-4045.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); 
+  padding-left: 6%;
+  padding-right: 6%;/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-body{
+    background-color: #fefefe;
+    text-decoration: none;
+    border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .5rem;
+  padding:30px;
+}
+
+.modal-header{
+  background-color: #093b66;
+  text-decoration: none;
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.paddingBot{
+  padding-bottom: 3%;
+}
+.espacio1{
+  padding-top: 8%;
+}
+.espacio5{
+  padding-top: 3%;
+}
+.row{
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+.boton{
+  position: absolute;
+  right:    0;
+  bottom:   0;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  background-color: white;
+  color: #000;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: url("https://i.ya-webdesign.com/images/add-png-to-photo-2.png");
+  background-size: 100%;
+  background-color: #ffffff;
+}
+.account{
+  height: 50px;
+  width: 50px;
+  padding-right: 30px;
+  border-radius: 50%;
+  background: url("https://definicionde.es/wp-content/uploads/2019/04/definicion-de-persona-min.jpg");
+  background-size: 180%;
+  background-position: center center;
+  background-color: #ffffff;
+}
+
+#formulario{
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  /*border: 1px solid white;*/
+  width: auto;
+  height: auto;
+  font-size: 120%;
+}
+
+.tablaClientes{
+  width:100%; 
+  height:400px; 
+  overflow:auto;
+}
+
+.centro{
+  text-align: center;
+}
+.BordeInicio{
+  background-color: white;
+  -webkit-box-shadow: 6px 6px 5px -4px rgba(0,0,0,0.58);
+  -moz-box-shadow: 6px 6px 5px -4px rgba(0,0,0,0.58);
+  box-shadow: 6px 6px 5px -4px rgba(0,0,0,0.58);
+  
+}

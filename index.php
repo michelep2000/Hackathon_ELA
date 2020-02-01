@@ -3,9 +3,6 @@ require "arriba.php";
 inicioPag("index", "login.css");
 include "./navBar.php";
 ?>
-<br>
-<br>
-<br>
 <?php
 if (isset($_POST["nombre"]) && isset($_POST["contra"])) {
   $nomUsu = $_POST["nombre"];
@@ -34,15 +31,51 @@ if($_SESSION["rol"]=='adm'){
 
   }
 }else{
-  ?><div class="container-fluid">
-    <div class="d-flex flex-column align-items-center w-100 justify-content-center logCont">
-      <form class="d-flex flex-column" action="index.php" method="post">
-        <h3>Usuario</h3>
-        <input type="text" name="nombre">
-        <h3 class="mt-2">Contraseña</h3>
-        <input type="password" name="contra">
-        <input class="mt-3" type="submit" value="Aceptar">
-      </form>
+  ?>
+    <div class="fondo1">
+        <div class="espacio1"></div>
+        <div class="container">
+            <div class="row">
+                <div class="BordeInicio col-6 offset-lg-3">
+                <div class="espacio1"></div>
+                <h2 class="Inicio centro"><img src="img/logo1.png" width="200" class="logo2" /></h2>
+                <div class="espacio1"></div>
+                    <form id="formulario" action="index.php" method="post">
+                        <label>Correo</label><br>
+                        <input type="text" name="nombre"> <br>
+                        <div class="espacio5"></div>
+                        <label>Contraseña</label><br>
+                        <input type="password" name="contra"> <br>
+                        <div class="espacio1"></div>
+                        <div class="botones col-12">
+                        <p>¿Aun no te has registrado?<a href='reg_index.php'>Resgitrate YA!!!</a></p>
+                        <input type="submit" class="btn btn btn-dark col-5" value="Entrar">
+                        </div>
+                        <div class="espacio4"></div>
+                    </form>
+                    <?php
+                        $arrErrores = [
+                            "noform" => "No se ha enviado el formulario",
+                            "notOK" => "Usuario o contraseña incorrecto",
+                            "nosesion" => "No hay sesion abierta",
+                            "close" => "Se ha cerrado la sesion correctamente",
+                            "notServer" => "Los servidores no estan operativos",
+                            "0result" => "Hay 0 resultados"
+                        ];
+
+                        if(isset($_GET["error"])){
+                            $claveError = $_GET['error'];
+                            if(isset($arrErrores[$claveError])){
+                                echo "<div class='centro'><font color='red'>$arrErrores[$claveError]</font></div>";
+                            }else{
+                                echo "<p>Error desconocido</p>";
+                            }
+                        }
+                    ?>
+                    <div class="espacio1"></div>
+                </div>
+            </div>
+        </div>
       <?php
       if (isset($_GET["error"]) && $_GET["error"] == "notOk"){
 
@@ -51,7 +84,6 @@ if($_SESSION["rol"]=='adm'){
         </div>";
       }?>
 <br>
-      <p>¿Aun no te has registrado?<a href='reg_index.php'>Resgitrate YA!!!</a></p>
+      
     <?php } ?>
-  </div>
-</div>
+  

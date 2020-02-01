@@ -8,11 +8,6 @@ if (isset($parameters)) {
   $usr = $mensajeRecibido["usr"];
 
   $query = "SELECT * FROM loginUsuarios WHERE loginUsuarios.id_usuario ='". mysqli_real_escape_string($conn, $usr)."'";
-<<<<<<< HEAD
-
-=======
-  echo $query;
->>>>>>> 1b91c8cd15e9c25f6aabba23628b9f5e8155818c
 
   $result = $conn->query($query);
 
