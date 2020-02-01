@@ -7,7 +7,7 @@ if (isset($parameters)) {
   $mensajeRecibido = json_decode($parameters, true);
   $usr = $mensajeRecibido["usr"];
 
-  $query = "SELECT * FROM usuarios WHERE usuarios.id_usuario ='". mysqli_real_escape_string($conn, $usr)."'";
+  $query = "SELECT * FROM loginUsuarios WHERE loginUsuarios.id_usuario ='". mysqli_real_escape_string($conn, $usr)."'";
 
 
   $result = $conn->query($query);

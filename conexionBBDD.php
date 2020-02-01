@@ -2,7 +2,7 @@
 $servername = "localhost";
 $user = "root";
 $password = "";
-$dbname = "hack-ela";
+$dbname = "ELA";
 $conn  =  new  mysqli($servername,$user,$password, $dbname);
 
 
