@@ -1,9 +1,51 @@
-<?php
-function inicioPag($title, $style){
-  echo "<!doctype html>
-  <html lang='en'>
-  <head>
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <script>
+    function habilitar(id) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("POST", "./insertPreguntas.php");
+      xhttp.setRequestHeader("Content-Type", "application/json");
+      /*var obj = {};
+      obj['btn'] = id;
+      console.log(obj);
+      objJSON = JSON.stringify(obj);
+      console.log(objJSON);*/
+      xhttp.send(`{'btn':${id}}`);
+
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+          var respuestaJSON = JSON.parse(this.responseText);
+          var button = document.getElementById(id);
+
+
+          if (respuestaJSON["newEstado"] == 0) {
+            button.setAttribute('btn btn-danger')
+          } else {
+            button.setAttribute('btn btn-success')
+          }
+
+
+        } else {
+          console.log(this.readyState + " " + this.status);
+          if (this.readyState == 4 && this.status == 404) {
+            alert("URL INCORRECTA");
+
+          }
+        }
+      };
+      
+    }
+  </script>
+  <!-- Required meta tags -->
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+  <!-- Bootstrap CSS -->
   <script src='script.js'></script>
+
     <!-- Required meta tags -->
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
@@ -25,16 +67,16 @@ function inicioPag($title, $style){
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'
         integrity='sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k'
         crossorigin='anonymous'></script>
-    <title>$title</title>
+    <title>Fundación Luzon</title>
 
   </head>
-  <body class='text-dark text-left'> ";
+  <body class='text-dark text-left'> 
 
-
-}
+<?php
 require "conexionBBDD.php";
 session_start();
 
 
 
 ?>
+

@@ -1,6 +1,5 @@
 <?php
 require "arriba.php";
-inicioPag("index", "login.css");
 include "./navBar.php";
 ?>
 <?php

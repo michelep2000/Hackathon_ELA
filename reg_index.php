@@ -1,6 +1,5 @@
 <?php
 require "arriba.php";
-inicioPag("Registro","'wew.css'");
 ?>
 
 <h1 class="display-4 text-center mt-5 pt-5">Registro</h1>
