@@ -7,7 +7,23 @@
 }
 
 #pelo{
-    border: solid red 2px;
+    display: flex;
+    justify-content: center;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+}
+
+#titulo2{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#e{
     display: flex;
     justify-content: center;
 }

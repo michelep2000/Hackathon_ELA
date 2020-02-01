@@ -4,14 +4,16 @@ inicioPag("Inicio", "tablaUsr.css");
 include "./navBar.php";
 ?>
 
-<div>
-    <h1>Panel de control</h1>
+<div id="titulo">
+    <h1>Panel de administración</h1>
 </div>
-
-<div class="btn-group" role="group" aria-label="Basic example">
+<div class="col-12" id="e">
+<div class="btn-group" id= "titulo2" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-secondary" onclick="myFunction('usuario')">Usuarios</button>
     <button type="button" class="btn btn-secondary" onclick="myFunction('grupo ')">Grupos</button>
 </div>
+</div>
+
 <div class="col-12" id="pelo">
     <table>
     <tbody id='tablaEntradas'>
