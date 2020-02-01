@@ -1,0 +1,16 @@
+body {
+
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mx-background-top-linear {
+  
+    background: -webkit-linear-gradient(45deg, #148F77 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(left, #148F77 48%, #1b1e21 48%);
+    background: linear-gradient(45deg, #148F77 45%, #1b1e21 48%);
+}
