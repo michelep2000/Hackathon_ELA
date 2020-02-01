@@ -1,13 +1,12 @@
 
 <?php
     include "./arriba.php";
-    inicioPag("inicio.php", "styles.css");
     include "./navBar.php";
-
+    echo "<img src='img/flor.png' alt='Smiley face' height='100' style='margin-bottom: 0'class='espacio4 mx-auto d-block'>";
     echo "<h1 class='titulo'>Bienvenido ".$_SESSION["nombre"]."</h1>";
 ?>
 
-<img src="img/flor.png" alt="Smiley face" height="100" class="espacio4 mx-auto d-block">
+
 
 <p class="centro1 lead">En la Fundación Luzón – Unidos Contra la ELA – no hay duda de la necesidad; legitimidad y beneficio general de la colaboración con organizaciones y profesionales sanitarios.
 

@@ -1,6 +1,5 @@
 <?php
 require "arriba.php";
-inicioPag("index", "login.css");
 include "./navBar.php";
 ?>
 <?php
@@ -20,7 +19,7 @@ if (isset($_POST["nombre"]) && isset($_POST["contra"])) {
     
 //Me dirijo a la pag
 if($_SESSION["rol"]=='adm'){
-  header("Location: panelControl.php");
+  header("Location: inicioAdmin.php");
 }else {
   header("Location: inicio.php");
 }

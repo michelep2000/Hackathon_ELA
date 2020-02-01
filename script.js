@@ -8,7 +8,7 @@ function verificarUsuario() {
   xhttp.open("POST", "./comprobarUsr.php");
   xhttp.setRequestHeader("Content-Type", "application/json");
 
-  xhttp.onreadystatechange = function() {
+  xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
 
       var respuestaJSON = JSON.parse(this.responseText);
@@ -18,14 +18,14 @@ function verificarUsuario() {
       var btnDisabled = document.createAttribute("disabled");
       var btnEnabled = btn.getAttributeNode("disabled");
 
-      if(respuestaJSON["isContained"]){
+      if (respuestaJSON["isContained"]) {
         usr.style.color = "red";
         msjError.className = "d-inline";
         msjError.style.color = "red";
         msjError.style.fontSize = "medium";
         btn.setAttributeNode(btnDisabled);
 
-      }else{
+      } else {
         usr.style.color = "black";
         msjError.className = "d-none";
         btn.removeAttributeNode(btnEnabled);
@@ -33,7 +33,7 @@ function verificarUsuario() {
       }
 
 
-    }else{
+    } else {
       console.log(this.readyState + " " + this.status);
       if (this.readyState == 4 && this.status == 404) {
         alert("URL INCORRECTA");
@@ -44,3 +44,6 @@ function verificarUsuario() {
 
   xhttp.send(objJSON);
 }
+
+
+

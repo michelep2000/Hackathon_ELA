@@ -1,9 +1,7 @@
 
 
         <?php
-        
-        inicioPag("navBar.php", "./styles.css");
-
+      
         if (isset($_GET["sesion"]) && $_GET["sesion"]=="cerrada") {
           session_unset();
         }
@@ -43,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" id="navButton" href="inicio.php">INICIO</a>
+                            <a class="nav-link" id="navButton" href="inicioAdmin.php">INICIO</a>
                         </li>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
@@ -92,13 +90,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" id="navButton" href="index.php">INICIO</a>
-                        </li>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <li class="nav-item">
-                            <a class="nav-link" id="navButton" href="clientes.php">PERFIL</a>
-                        </li>
+                        
                     </ul>
                   <form class="form-inline my-2 my-lg-0">
               
