@@ -24,9 +24,9 @@
         </div>
         <div class="col-4">
         <img src="img/Youtube_logo.png" alt="Smiley face" height="50" class=" espacio3 mx-auto d-block " >
-        <iframe height="233" src="https://www.youtube.com/embed/WLXCFxbqje4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe height="233" src="https://www.youtube.com/embed/gltdk8oFZoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe  height="233" src="https://www.youtube.com/embed/gAZRnkk_JGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe height="233" width= "350" src="https://www.youtube.com/embed/WLXCFxbqje4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe height="233" width= "350"src="https://www.youtube.com/embed/gltdk8oFZoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  height="233" width= "350" src="https://www.youtube.com/embed/gAZRnkk_JGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            
         </div>
     </div>
