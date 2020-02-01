@@ -11,7 +11,7 @@ if (isset($_POST["nombre"]) && isset($_POST["contra"])) {
   $nomUsu = $_POST["nombre"];
   $contra = $_POST["contra"];
   // Realizar una consulta MySQL
-  $query = "SELECT * FROM usuarios WHERE usuarios.id_usuario ='". mysqli_real_escape_string($conn, $nomUsu)."' AND usuarios.contrasena = '". mysqli_real_escape_string($conn, $contra)."'";
+  $query = "SELECT * FROM loginUsuarios WHERE loginUsuarios.id_usuario ='". mysqli_real_escape_string($conn, $nomUsu)."' AND loginUsuarios.contrasena = '". mysqli_real_escape_string($conn, $contra)."'";
   $result = $conn->query($query);
 
   if($result->num_rows > 0) {
