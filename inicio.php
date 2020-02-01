@@ -1,7 +1,6 @@
 
 <?php
     include "./arriba.php";
-    inicioPag("inicio.php", "styles.css");
     include "./navBar.php";
 
     echo "<h1 class='titulo'>Bienvenido ".$_SESSION["nombre"]."</h1>";

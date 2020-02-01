@@ -1,9 +1,7 @@
 
 
         <?php
-        
-        inicioPag("navBar.php", "./styles.css");
-
+      
         if (isset($_GET["sesion"]) && $_GET["sesion"]=="cerrada") {
           session_unset();
         }

@@ -9,12 +9,13 @@ if (isset($parameters)) {
 var_dump($mensajeRecibido);
    
     cambiarEstadoPregunta($mensajeRecibido['btn'], $conn);
-    if (isset($mensajeRecibido['preguntas'])) {
-        insertarPregunta($mensajeRecibido['preguntas'], $conn);
-        header("Location: panelControl.php");
-    } else if (isset($mensajeRecibido['btn'])) {
+      if (isset($mensajeRecibido['btn'])) {
         cambiarEstadoPregunta($mensajeRecibido['btn'], $conn);
     }
+}
+if (isset($_POST['preguntas'])) {
+    insertarPregunta($_POST['preguntas'], $conn);
+    header("Location: panelControl.php");
 }
 function insertarPregunta($pregunta, $conn)
 {
