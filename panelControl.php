@@ -15,7 +15,7 @@ include "./navBar.php";
 </div>
 
 <div class="col-12" id="pelo">
-    <table>
+    <table class="table">
     <tbody id='tablaEntradas'>
 
     </tbody>
@@ -46,7 +46,7 @@ include "./navBar.php";
                         for (const key in entrada) {
                             var column = document.createElement('th');
                             var text = document.createTextNode(key);
-                            var h4 = document.createElement('h4');
+                            var h4 = document.createElement('h3');
                             column.appendChild(h4);
                             h4.appendChild(text);
                             namesRow.appendChild(column);

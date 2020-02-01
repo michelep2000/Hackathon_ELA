@@ -4,14 +4,17 @@
 
 #col{
     width: 30%;
+    margin-right: 10%;
 }
 
 #pelo{
     display: flex;
     justify-content: center;
+    margin-top: 3%;
 }
 
 #titulo{
+    padding: 5%;
     display: flex;
     justify-content: center;
 }
