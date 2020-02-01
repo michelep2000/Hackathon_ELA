@@ -1,24 +1,13 @@
-#navbarSupportedContent.li{
-    padding-left: 30%;
-  
-  }
-  
+
   #navButton{
-      border: solid #093b66 2px;
+      border: solid #afc86d 2px;
       border-radius: 15px 50px;
   }
   #navButton:hover{
-      background-color: #093b66;
+      background-color: #afc86d;
       color: white;
   
   }
-  
-  #navbarSupportedContent{
-    display: flex;
-    justify-content: space-around;
-  
-  }
-  
   #floors{
     padding: 10px;
   }
@@ -147,3 +136,39 @@
       background-position: center center;
       background-color: #ffffff;
     }
+
+    .titulo{
+      padding-top: 4%;
+      font-size: 300%;
+      text-align: center;
+    }
+
+    .subtitulo{
+      padding-bottom: 8%;
+      font-size: 200%;
+      text-align: center;
+    }
+
+    .centro{
+      text-align: center;
+    }
+
+    .espacio{
+      margin-top: 1%;
+      margin-bottom: 10%;
+    }
+
+    .espacio1{
+      margin-top: 1%;
+      margin-bottom: 5%;
+    }
+
+    .espacio3{
+      margin-top: 1%;
+      margin-bottom: 15%;
+    }
+
+    
+
+
+  

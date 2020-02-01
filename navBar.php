@@ -1,67 +1,111 @@
-<br>
-<br>
-<br>
-  <nav class="navbar navbar-expand-sm navbar-dark navbar-center fixed-top mx-background-top-linear mb-4" id ="navbar">
-  <div class="container-fluid">
-    <a href="cerrarSesion.php" class="navbar-brand">Cerrar sesión</a>
 
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class=" collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ml-auto">
 
         <?php
+        
+        inicioPag("navBar.php", "./styles.css");
+
         if (isset($_GET["sesion"]) && $_GET["sesion"]=="cerrada") {
           session_unset();
         }
          if (isset($_SESSION["nombre"]) && isset($_SESSION["rol"])) {
            if($_SESSION["rol"]=='adm'){
             ?>
-              <nav class="navbar navbar-expand-lg navbar-light " id="nav">
-                <a class="navbar-brand" href="index.php"><img src="imagenes/logo.png" width="90" class="logo2" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/luzon1.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100 " src="img/luzon2.jpeg" alt="Second slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.php"><img src="img/logo1.png" width="210" class="logo2" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                  <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" id="navButton" href="index.php">INICIO</a>
+                            <a class="nav-link" id="navButton" href="inicio.php">INICIO</a>
                         </li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
-                            <a class="nav-link" id="navButton" href="clientes.php">Panel de Control</a>
+                            <a class="nav-link" id="navButton" href="panelControl.php">PANEL DE ADMINISTRACION</a>
                         </li>
                     </ul>
+                  <form class="form-inline my-2 my-lg-0">
+              
+                    <a class="btn btn-outline-danger my-2 my-sm-0" type="submit" href="cerrarSesion.php">Cerrar Sesión</a>
+                  </form>
                 </div>
-                <form class="form-inline my-2 my-lg-2">
-                    <a class="account mx-4" href="perfil.php"></a>
-                </form>
-                </nav>
+              </nav>
 
             <?php
            }else {
             ?>
-              <nav class="navbar navbar-expand-lg navbar-light " id="nav">
-                <a class="navbar-brand" href="index.php"><img src="imagenes/logo.png" width="90" class="logo2" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/luzon1.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100 " src="img/luzon2.jpeg" alt="Second slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.php"><img src="img/logo1.png" width="210" class="logo2" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                  <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" id="navButton" href="index.php">INICIO</a>
                         </li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
-                            <a class="nav-link" id="navButton" href="clientes.php">Panel de Control</a>
+                            <a class="nav-link" id="navButton" href="clientes.php">PERFIL</a>
                         </li>
                     </ul>
+                  <form class="form-inline my-2 my-lg-0">
+              
+                    <a class="btn btn-outline-danger my-2 my-sm-0" type="submit" href="cerrarSesion.php">Cerrar Sesión</a>
+                  </form>
                 </div>
-                <form class="form-inline my-2 my-lg-2">
-                    <a class="account mx-4" href="perfil.php"></a>
-                </form>
-                </nav>
+              </nav>
 
             <?php
            }
@@ -69,7 +113,3 @@
 
         } ?>
 
-      </ul>
-    </div>
-  </div>
-</nav>
