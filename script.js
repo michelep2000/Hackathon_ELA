@@ -45,37 +45,5 @@ function verificarUsuario() {
   xhttp.send(objJSON);
 }
 
-function enable(id) {
-  var xhttp = XMLHttpRequest();
-  xhttp.open("POST", "./insertarPreguntas.php");
-  xhttp.setRequestHeader("Content-Type", "application/json");
 
-  var obj = {};
-  obj['btn'] = id;
-  objJSON = JSON.stringify(obj);
-
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-
-      var respuestaJSON = JSON.parse(this.responseText);
-      var button = document.getElementById(id);
-      
-
-      if (respuestaJSON["enable"]==0) {
-        button.setAttribute('btn btn-danger')
-      } else {
-        button.setAttribute('btn btn-success')
-      }
-
-
-    } else {
-      console.log(this.readyState + " " + this.status);
-      if (this.readyState == 4 && this.status == 404) {
-        alert("URL INCORRECTA");
-
-      }
-    }
-  };
-  xhttp.send(objJSON);
-}
 
